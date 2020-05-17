@@ -1,2 +1,4 @@
-# meshless_and_xfem_methods_combination
-There are some Matlab files. Launch "main" file to start. The goal of this program is to calculate fatigue centre crack propagation in 2D plate under mixed mode. The combination of X-FEM and Meshless methods is used. You can find here my Master thesis and presentation too.
+# Meshless and X-FEM methods combination
+Meshless and X-FEM methods were combined to solve 2D problem of fracture mechanics. The goal of this thesis is to create a new kind of mathematical and numerical model to calculate fatigue centre crack propagation in 2D plate under mixed mode. Moreover, its advantages in comparison with ANSYS are proved by numerical experiments.
+
+Launch "main" file to launch the code.

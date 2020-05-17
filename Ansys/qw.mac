@@ -1,0 +1,149 @@
+finish
+/clear
+
+/prep7
+
+! Model dimensions
+W=100             !--- WIDTH OF MODEL
+H=200             !--- HEIGHT OF MODEL
+a=W/21*5            !--- CRACK LENGTH
+
+teta = 15
+step = W/21
+
+PI=ACOS(-1)
+
+a = a/cos(teta/180*pi)
+
+! applied load
+PRES=1 ! MPa
+
+! Material model
+E=2.0e5          !--- YOUNG MODULUS
+NU=0.25           !--- POISSON'S RATIO
+RO=1.0           !--- DENSITY
+
+! Paris Law Constants
+C=7E-8
+M = 2.1
+
+! element types 
+et,1,182
+     
+! Continuum material behavior
+mp, ex,   1, E
+mp, nuxy,  1, NU
+mp, dens, 1, R0
+
+! Fatigue crack growth Law Specification
+tb, cgcr, 2, , , PARIS
+tbdata, 1, C, M
+     
+! define rectangular area
+blc4, 0.0, 0.0, W, H, 0
+
+! mesh the area
+type, 1 
+mat, 1  
+lesize, 1 , , , 21
+lesize, 2 , , , H/W*21
+mshkey,1 
+amesh, 1
+
+! выбрали область для наличия трещины
+
+! Element component for XFENRICH command
+esel,s,cent,x,0, W
+esel,r,cent,y,H/2-0.5*a*sin(teta/180*pi)-1.2*step*cos(teta/180*pi),H/2+0.5*a*sin(teta/180*pi)+1.2*step*cos(teta/180*pi)
+cm, testcmp, elem   
+allsel  
+
+! define keypoints for crack surface
+!k, 11, W/2-a/2*cos(teta/180*pi), H/2-a/2*sin(teta/180*pi)
+!k, 12, W/2+a/2*cos(teta/180*pi), H/2+a/2*sin(teta/180*pi)
+k, 11, W/2-a/2*cos(teta/180*pi), H/2-a/2*sin(teta/180*pi)
+k, 12, W/2+a/2*cos(teta/180*pi), H/2+a/2*sin(teta/180*pi)
+l, 11,12
+
+! mesh the crack surface with MESH200 elements
+et, 2, 200, 0 ! keyopt(1) = 0 to generate line meshes      
+type,2  
+mat, 2 
+lsel,s,loc,x,W/2 
+lsel,r,loc,y,H/2 
+lmesh,all
+allsel 
+
+! define Mesh200 element component defining the crack surface
+esel,s,type,,2
+cm,m200el,elem
+allsel
+
+! mesh200 node component for crk front   
+!nsel,s,loc,x,W/2-a/2*cos(teta/180*pi)
+!nsel,r,loc,y,H/2-a/2*sin(teta/180*pi)
+!nsel,a,loc,x,W/2+a/2*cos(teta/180*pi)
+!nsel,r,loc,y,H/2+a/2*sin(teta/180*pi)
+nsel,s,node,,947,948
+!nsel,s,node,,277,278
+!nsel,s,node,,1036,1037
+!nsel,s,node,,781,782
+cm, m200nd, node
+allsel  
+
+!define enrichment identification   
+xfenrich, ENRICH1, TESTCMP,,SING,2.5*step,0.01*step
+
+! define LSM values 
+xfcrkmesh,ENRICH1, m200el, m200nd        
+allsel  
+
+xflist  ! print crack information
+
+
+
+
+
+! b.c. - bottom face
+nsel, s, loc, y, 0
+d,all,UY
+nsel, r, loc, x, 0
+d,all,UX
+allsel
+
+! b.c. - top face
+nsel, s, loc, y, H
+sf, all, pres, -PRES
+allsel
+
+! Solution Module
+/solu
+antype,0
+time, 1.0
+deltim, 0.1, 0.1,0.1
+outres,all, all
+
+!Fracture Parameter calculations  
+CINT, NEW, 1
+CINT, CXFE,  _XFCRKFREL1
+CINT, TYPE, SIFS, 2 
+CINT, NCON, 8     
+CINT, NORM, 0, 2
+
+
+!CGROW calculations
+cgrow, new, 1
+cgrow, cid, 1
+cgrow, method, xfem
+cgrow, fcoption, mtab, 2
+
+!Fatigue related data
+CGROW, FCG, METH, LC  ! life-cycle method
+CGROW, FCG, DAMX, step ! maximum crack growth increment
+CGROW, FCG, DAMN, step ! minimum crack growth increment
+CGROW, FCG, SRAT, 1/2 ! stress-ratio 
+
+kbc, 1  ! loads are stepped for fatigue analysis 
+
+solve
+finish

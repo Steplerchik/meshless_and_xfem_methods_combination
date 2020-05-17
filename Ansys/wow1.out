@@ -1,0 +1,493 @@
+
+ ANSYS Academic Teaching Introductory              
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2019 R1          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2018 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2019 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Academic Student 2019 R1
+ FENSAP-ICE 2019 R1  
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  INITIAL JOBNAME              = wow                                                                                                                                                                                                                                                     
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  MPI OPTION                   = INTELMPI
+  START-UP FILE MODE           = READ  
+  STOP FILE MODE               = READ  
+  GRAPHICS DEVICE REQUESTED    = win32   
+  GRAPHICAL ENTRY              = YES   
+  LANGUAGE                     = en-us               
+  INITIAL DIRECTORY = C:\Users\usr\Desktop\Âåñíà 2019\ÂÊÐÌ\Ansys
+
+ RELEASE= 2019 R1              BUILD= 19.3      UP20181204   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=wow1  16:12:21  MAY 25, 2019 CP=      5.912
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.271
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.271
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.318
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.318
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.318
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.334
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.349
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.349
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.365
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.365
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.412
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.412
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.427
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.427
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.427
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.427
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.474
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         6.474
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         7.831
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         7.831
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.050
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.050
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.081
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.081
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.362
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.362
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.455
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.455
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.455
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.455
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.549
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.549
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.627
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ ***** ROUTINE COMPLETED *****  CP =         8.627
+
+
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ ANSYS Academic Teaching Introductory              
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          0
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          9
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2019 R1               Build 19.3         UP20181204     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)     1 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used       1 MB    Maximum Scratch Memory Used      4 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =         17.893       Time  =  19:15:22        |
+ |        Elapsed Time (sec) =     183789.000       Date  =  05/27/2019      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

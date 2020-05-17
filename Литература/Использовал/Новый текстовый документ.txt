@@ -1,0 +1,4 @@
+Kim, J.H., Paulino, G.H., 2003. T-stress, mixed-mode stress intensity factors, and
+crack initiation angles in functionally graded materials: a unified approach
+using the interaction integral method. Computer Methods in Applied Mechanics
+and Engineering 192, 1463–1494.

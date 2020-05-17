@@ -1,0 +1,125 @@
+finish
+/clear
+
+/prep7
+/com
+/com ******************************************************
+/com
+/com    Sample input file for generating a center crack
+/com    in a 2-D XFEM model
+/com
+/com ******************************************************
+
+! element types 
+et,1,182
+     
+!materials  
+mp, ex,   1, 3.0e6  
+mp, nuxy,  1, 0.3   
+mp, dens, 1, 1.0
+
+pres = 1
+! Paris Law Constants
+C=7E-8
+M = 2.1
+! Fatigue crack growth Law Specification
+tb, cgcr, 2, , , PARIS
+tbdata, 1, C, M
+     
+! define rectangular area
+blc4, 0.0, 0.0, 8, 10, 0
+
+! mesh the area
+type, 1 
+mat, 1  
+lesize, 1 , , , 11 
+lesize, 2 , , , 11 
+mshkey,1 
+amesh, 1
+
+! Element component for XFENRICH command
+esel,s,cent,x,0, 8
+esel,r,cent,y,4,6 
+cm, testcmp, elem   
+allsel  
+
+! define keypoints for crack surface
+k, 11, 8/11*3, 5.0 
+k, 12, 8-8/11*3, 5.0 
+l, 11,12
+    
+! mesh the crack surface with MESH200 elements
+et, 2, 200, 0 ! keyopt(1) = 0 to generate line meshes      
+type,2  
+mat, 2  
+lmesh,5 
+
+! define Mesh200 element component defining the crack surface
+esel,s,type,,2
+cm,m200el,elem
+allsel
+
+! mesh200 node component for crk front   
+nsel,s,loc,x,8/11*3
+nsel,r,loc,y,5.0
+nsel,a,loc,x,8-8/11*3
+nsel,r,loc,y,5.0
+cm, m200nd, node
+allsel  
+
+!define enrichment identification   
+xfenrich, ENRICH1, TESTCMP,,SING,0
+    
+! define LSM values 
+xfcrkmesh,ENRICH1, m200el, m200nd        
+allsel  
+      
+xflist  ! print crack information
+
+
+
+
+
+! b.c. - bottom face
+nsel, s, loc, y, 0
+d,all,UY
+nsel, r, loc, x, 0
+d,all,UX
+allsel
+
+! b.c. - top face
+nsel, s, loc, y, 10
+sf, all, pres, -PRES
+allsel
+
+! Solution Module
+/solu
+antype,0
+time, 1.0
+deltim, 0.1, 0.1,0.1
+outres,all, all
+
+!Fracture Parameter calculations  
+CINT, NEW, 1
+CINT, CXFE,  _XFCRKFREL1
+CINT, TYPE, SIFS, 2 
+CINT, NCON, 8     
+CINT, NORM, 0, 2
+
+
+!CGROW calculations
+cgrow, new, 1
+cgrow, cid, 1
+cgrow, method, xfem
+cgrow, fcoption, mtab, 2
+
+!Fatigue related data
+CGROW, FCG, METH, LC  ! life-cycle method
+CGROW, FCG, DAMX, 8/11/2 ! maximum crack growth increment
+CGROW, FCG, DAMN, 8/11/2 ! minimum crack growth increment
+CGROW, FCG, SRAT, 1/2 ! stress-ratio 
+
+kbc, 1  ! loads are stepped for fatigue analysis 
+
+solve
+finish
